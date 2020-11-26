@@ -1,0 +1,137 @@
+body{
+    background: url('/img/4.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 500%;
+}
+.mycontain{
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+    height: 500px;
+    width:400px;
+    position: relative;
+    margin-top:5%;
+}
+.mycontain:hover{
+    transform:rotateY(180deg);
+}
+.front{
+    position: absolute;
+    height: 100%;
+    width:100%;
+    background:linear-gradient(30deg,#14eccf,#a8e063); 
+    backface-visibility: hidden;
+    border-radius: 20px;
+    box-shadow: 20px 20px 10px 10px rgb(87, 85, 85);
+}
+.back{
+    position: absolute;
+    height: 100%;
+    width:100%;
+    background: linear-gradient(to top right,#9afaed,#ddfcb8);
+    backface-visibility: hidden;
+    transform:rotateY(180deg);
+    box-shadow: 40px 40px 50px black;
+    border-radius: 20px;
+    text-align: center;
+}
+.form-group{
+    margin-top:25px;
+    margin-left:25px;
+    margin-right:25px;
+}
+/* submit button */
+.back .but{
+    background:none; 
+    color:black;
+    font-size:20px;
+    padding: 5px 30px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    background: #05e4c6;
+    font-family: Georgia, serif;
+    box-shadow: 4px 4px 5px  #6ceedd;
+}
+/* lock icon */
+form svg{
+    position: relative;
+    font-size:100px;
+    top:50px;
+    margin-bottom:50px;
+    color:black;
+}
+/* styling of username and password */
+.back input[type="text"],.back input[type="password"]{
+    background:none;
+    display:block;
+    margin:50px auto;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid #0bf8d9; 
+    outline: none;
+    transition: all;
+    transition-duration: 1s;
+}
+.back input[type="text"]:focus,.back input[type="password"]:focus{
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+/* styling of today  */
+.front .square{
+    margin-top:15%;
+    text-align:center;
+    font-size:60px;
+    font-weight:900;
+    color:rgb(199,21,133);
+    text-shadow: 3px 3px 0px rgb(255,105,180);
+
+}
+/* styling of front circle with quote */
+.front .circle{
+    background-color:rgba(197, 236, 197,1);
+    margin-left:15%;
+    margin-right:15%;
+    text-align:center;
+    padding:35px;
+    font-size:25px;
+    border-radius: 50%;
+    text-transform: uppercase;
+    line-height: 2em;
+    font-family: Georgia, serif;
+}
+
+/* 
+styling of todo list page */
+
+.todo{
+    background:linear-gradient(45deg,#9afaed,#ddfcb8); 
+    
+}
+.navbar{ 
+    min-height: 100px;   /*min height of navbar*/
+    max-height: 300px;  /*max height of navbar*/
+    background:linear-gradient(to top right,#14eccf,#a8e063);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 10%;
+}
+.navbar a{
+    font-size: 25px;
+    font-weight: 200px;
+    margin-right: 35px;
+    border-radius: 15px;
+}
+.navbar a:focus{
+   border: 2px solid #0ae9cb;
+  border-radius: 10px;
+}       
+.navbar a:hover{
+   background: #baec7c;
+}
+       
+#demo .item label {
+    font-size:20px;
+    padding-left: 5%;
+    font-family: Helvetica, sans-serif;
+}
